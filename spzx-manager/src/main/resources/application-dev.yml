@@ -8,12 +8,14 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_spzx?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 1234
+    password: 199811100
   data:
     redis:
-      host: 192.168.10.100
-      port: 6379
-#password: 1234
+      cluster:
+        nodes: 192.168.10.100:6379,192.168.10.100:6380,192.168.10.101:6381,192.168.10.101:6382,192.168.10.102:6383,192.168.10.102:6384
+        max-redirects: 3
+      password: 123456
+      database: 0
 
 
 mybatis:

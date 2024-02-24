@@ -17,6 +17,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.0</version>
+        </dependency>
         <!-- redisçèµ·æ­¥ä¾èµ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
