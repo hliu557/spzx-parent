@@ -7,6 +7,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spzx-common</artifactId>
+    <packaging>pom</packaging>
     <name>Archetype - spzx-common</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>common-util</module>
+        <module>common-service</module>
+    </modules><dependencies>
+    <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>5.5.2</version>
+    </dependency>
+</dependencies>
+
 </project>
