@@ -4,25 +4,25 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-@Schema(description = "å“åº”ç»“æœå®ä½“ç±»")
+@Schema(description = "ÏìÓ¦½á¹ûÊµÌåÀà")
 public class Result<T> {
 
-    //è¿”å›ç 
-    @Schema(description = "ä¸šåŠ¡çŠ¶æ€ç ")
+    //·µ»ØÂë
+    @Schema(description = "ÒµÎñ×´Ì¬Âë")
     private Integer code;
 
-    //è¿”å›æ¶ˆæ¯
-    @Schema(description = "å“åº”æ¶ˆæ¯")
+    //·µ»ØÏûÏ¢
+    @Schema(description = "ÏìÓ¦ÏûÏ¢")
     private String message;
 
-    //è¿”å›æ•°æ®
-    @Schema(description = "ä¸šåŠ¡æ•°æ®")
+    //·µ»ØÊı¾İ
+    @Schema(description = "ÒµÎñÊı¾İ")
     private T data;
 
-    // ç§æœ‰åŒ–æ„é€ 
+    // Ë½ÓĞ»¯¹¹Ôì
     private Result() {}
 
-    // è¿”å›æ•°æ®
+    // ·µ»ØÊı¾İ
     public static <T> Result<T> build(T body, Integer code, String message) {
         Result<T> result = new Result<>();
         result.setData(body);
@@ -31,7 +31,7 @@ public class Result<T> {
         return result;
     }
 
-    // é€šè¿‡æšä¸¾æ„é€ Resultå¯¹è±¡
+    // Í¨¹ıÃ¶¾Ù¹¹ÔìResult¶ÔÏó
     public static <T> Result build(T body , ResultCodeEnum resultCodeEnum) {
         return build(body , resultCodeEnum.getCode() , resultCodeEnum.getMessage()) ;
     }

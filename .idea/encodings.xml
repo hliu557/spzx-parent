@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/spzx-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spzx-manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spzx-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-model/src/com/lhy/spzx/model/vo/common/Result.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/spzx-model/src/com/lhy/spzx/model/vo/common/ResultCodeEnum.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/spzx-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />

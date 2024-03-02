@@ -2,25 +2,25 @@ package com.lhy.spzx.model.vo.common;
 
 import lombok.Getter;
 
-@Getter // æä¾›è·å–å±æ€§å€¼çš„getteræ–¹æ³•
+@Getter // Ìá¹©»ñÈ¡ÊôĞÔÖµµÄgetter·½·¨
 public enum ResultCodeEnum {
 
-    SUCCESS(200 , "æ“ä½œæˆåŠŸ") ,
-    LOGIN_ERROR(201 , "ç”¨æˆ·åæˆ–è€…å¯†ç é”™è¯¯"),
-    VALIDATECODE_ERROR(202 , "éªŒè¯ç é”™è¯¯") ,
-    LOGIN_AUTH(208 , "ç”¨æˆ·æœªç™»å½•"),
-    USER_NAME_IS_EXISTS(209 , "ç”¨æˆ·åå·²ç»å­˜åœ¨"),
-    SYSTEM_ERROR(9999 , "æ‚¨çš„ç½‘ç»œæœ‰é—®é¢˜è¯·ç¨åé‡è¯•"),
-    NODE_ERROR( 217, "è¯¥èŠ‚ç‚¹ä¸‹æœ‰å­èŠ‚ç‚¹ï¼Œä¸å¯ä»¥åˆ é™¤"),
-    DATA_ERROR(204, "æ•°æ®å¼‚å¸¸"),
-    ACCOUNT_STOP( 216, "è´¦å·å·²åœç”¨"),
+    SUCCESS(200 , "²Ù×÷³É¹¦") ,
+    LOGIN_ERROR(201 , "ÓÃ»§Ãû»òÕßÃÜÂë´íÎó"),
+    VALIDATECODE_ERROR(202 , "ÑéÖ¤Âë´íÎó") ,
+    LOGIN_AUTH(208 , "ÓÃ»§Î´µÇÂ¼"),
+    USER_NAME_IS_EXISTS(209 , "ÓÃ»§ÃûÒÑ¾­´æÔÚ"),
+    SYSTEM_ERROR(9999 , "ÄúµÄÍøÂçÓĞÎÊÌâÇëÉÔºóÖØÊÔ"),
+    NODE_ERROR( 217, "¸Ã½ÚµãÏÂÓĞ×Ó½Úµã£¬²»¿ÉÒÔÉ¾³ı"),
+    DATA_ERROR(204, "Êı¾İÒì³£"),
+    ACCOUNT_STOP( 216, "ÕËºÅÒÑÍ£ÓÃ"),
 
-    STOCK_LESS( 219, "åº“å­˜ä¸è¶³"),
+    STOCK_LESS( 219, "¿â´æ²»×ã"),
 
     ;
 
-    private Integer code ;      // ä¸šåŠ¡çŠ¶æ€ç 
-    private String message ;    // å“åº”æ¶ˆæ¯
+    private Integer code ;      // ÒµÎñ×´Ì¬Âë
+    private String message ;    // ÏìÓ¦ÏûÏ¢
 
     private ResultCodeEnum(Integer code , String message) {
         this.code = code ;
