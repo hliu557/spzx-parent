@@ -8,4 +8,5 @@ import com.lhy.spzx.model.vo.system.LoginVo;
 public interface SysUserService {
     public LoginVo login(LoginDto loginDto);
     public SysUser getUserInfoByToken(String token);
+    public void logout(String token);
 }

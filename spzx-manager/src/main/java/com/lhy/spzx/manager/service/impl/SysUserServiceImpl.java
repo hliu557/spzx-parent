@@ -62,6 +62,12 @@ public class SysUserServiceImpl implements SysUserService {
         return sysUser;
     }
 
+    @Override
+    public void logout(String token) {
+
+        redisTemplate.delete("user:login"+token);
+    }
+
     @Autowired
     public void setRedisTemplate(RedisTemplate redisTemplate) {
         this.redisTemplate = redisTemplate;

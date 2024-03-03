@@ -55,6 +55,15 @@ public class IndexController {
 
         return Result.build(null,ResultCodeEnum.SUCCESS);
     }
+
+    @GetMapping(value = "/logout")
+    public Result logout(@RequestHeader(name = "token") String token){
+
+        sysUserService.logout(token);
+
+        return Result.build(null,ResultCodeEnum.SUCCESS);
+
+    }
     @Autowired
     public void setSysUserService(SysUserService sysUserService) {
         this.sysUserService = sysUserService;
